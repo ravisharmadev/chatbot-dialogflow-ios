@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Qg-uh-rfb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chatbot_dev" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icon_chatbot" selectedImage="icon_chatbot_sel" id="9a1-Lr-aFE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="135"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CXj-gS-tnI">
+            <objects>
+                <viewController id="G0x-tT-6Tc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tSh-SD-RDc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Chatbot" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OL-db-Q2p">
+                                <rect key="frame" x="20" y="385" width="374" height="126"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="63"/>
+                                <color key="textColor" red="0.27073731287672531" green="0.27456781695649735" blue="0.54197665983359722" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select second tab to go to chatbot scene" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTJ-H1-zOg">
+                                <rect key="frame" x="20" y="531" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.27073731290000003" green="0.27456781699999999" blue="0.54197665979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CSH-5F-sER"/>
+                        <color key="backgroundColor" red="0.74783102909418786" green="0.75444343378135992" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lTJ-H1-zOg" firstAttribute="top" secondItem="6OL-db-Q2p" secondAttribute="bottom" constant="20" id="BAX-gi-s9f"/>
+                            <constraint firstItem="6OL-db-Q2p" firstAttribute="centerY" secondItem="tSh-SD-RDc" secondAttribute="centerY" id="COg-t3-Wod"/>
+                            <constraint firstItem="6OL-db-Q2p" firstAttribute="leading" secondItem="CSH-5F-sER" secondAttribute="leading" constant="20" id="RWU-7V-Lbs"/>
+                            <constraint firstItem="CSH-5F-sER" firstAttribute="trailing" secondItem="lTJ-H1-zOg" secondAttribute="trailing" constant="20" id="e0i-YE-Jmn"/>
+                            <constraint firstItem="lTJ-H1-zOg" firstAttribute="leading" secondItem="CSH-5F-sER" secondAttribute="leading" constant="20" id="f3r-ml-Dvt"/>
+                            <constraint firstItem="CSH-5F-sER" firstAttribute="trailing" secondItem="6OL-db-Q2p" secondAttribute="trailing" constant="20" id="jfJ-dl-I9d"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icon_home" selectedImage="icon_home_sel" id="bqk-Ga-sm6">
+                        <color key="badgeColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBD-fI-zAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="-686"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sNz-EU-mEY">
+            <objects>
+                <tabBarController id="3Qg-uh-rfb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xjc-vD-p0p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="G0x-tT-6Tc" kind="relationship" relationship="viewControllers" id="Lxo-ZP-suY"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="wIP-uC-3iV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huL-5S-bu4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046" y="-256"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_chatbot" width="32" height="32"/>
+        <image name="icon_chatbot_sel" width="42" height="42"/>
+        <image name="icon_home" width="32" height="32"/>
+        <image name="icon_home_sel" width="42" height="42"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
